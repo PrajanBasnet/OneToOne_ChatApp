@@ -22,9 +22,10 @@ sendButton.addEventListener("click", (e) => {
 })
 
 socket.on("message", (message) => {
-    // const newLi = document.createElement("li");
+    const newLi = document.createElement("li");
     const newContent = document.createTextNode(`${message}`);
-    content.appendChild(newContent);
+    newLi.innerHTML = `${message}`;
+    content.appendChild(newLi);
     content.innerHTML = message;
 
 })

@@ -3,11 +3,11 @@ const express = require("express");
 const { createServer } = require("node:http");
 
 const { Server } =   require("socket.io");
+
 // io is our socket io server
 const app = express();
 const server = createServer(app);
 
-//capital s is the server constructor in the docs 
 app.use(express.static('public'));
 const io = new Server(server);
 
@@ -31,8 +31,6 @@ io.on("connection",(socket)=>{
                 console.log(`There was some problem finding the username ${user[toReceiver]} ${user[username]} ${username} ${field}`);
             }
     })
-
-    
 
 });
 
