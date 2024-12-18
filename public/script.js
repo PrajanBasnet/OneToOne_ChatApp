@@ -21,10 +21,10 @@ sendButton.addEventListener("click", (e) => {
     }
 })
 
-socket.on("message", (message) => {
+socket.on("message", (username,message) => {
     const newLi = document.createElement("li");
     const newContent = document.createTextNode(`${message}`);
-    newLi.innerHTML = `${message}`;
+    newLi.innerHTML = `<t>${username}</t>:- ${message}`;
     content.appendChild(newLi);
     // content.innerHTML = message;
 

@@ -1,23 +1,38 @@
-<form id="register">
-    <label for="named">Your Name:</label>
-    <input type="text" id="named" placeholder="Enter your name" />
-    <button type="submit">Register</button>
-</form>
-
-<div>
-    <label for="recipient">Recipient's Name:</label>
-    <input type="text" id="recipient" placeholder="Recipient's name" />
-</div>
-
-<div>
-    <input id="field" placeholder="Type your message..."/>
-    <button id="send">Send</button>
-</div>
-
-<div id="content"></div>
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main">
+        
+        
+        <form id="register">
+            <label for="named">Your Name:</label><br>
+            <input type="text" class="reg" id="named" placeholder="Enter your name" /><br>
+            <button type="submit">Register</button>
+        </form>
+        
+        <div>
+            <label for="recipient">Recipient's Name:</label><br>
+            <input type="text" id="recipient" class="reg" placeholder="Recipient's name" />
+        </div>
+        
+    </div>
+    <div id="content"></div>
+    
+    
+    <div id="ct">
+        <input id="field" placeholder="Type your message..."/>
+        <button id="send">Send</button>
+    </div>
+    
     <script src="/socket.io/socket.io.min.js"></script>
-
+    
     <script src="script.js"></script>
+</body>
+</html>

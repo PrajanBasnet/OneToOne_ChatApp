@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Tint&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+GB+J+Guides:ital@0;1&family=Press+Start+2P&display=swap');
+
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main{
+        align-items: center;
+        font-size: 23px;
+        display: flex;
+        background-color: rgb(1, 4, 7);
+        color: white;
+        padding: 12px 12px;
+        flex-direction: column;
+    }
+.reg{
+    width: 200%;
+}
+
+#ct{
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    position: absolute;
+    width: 99%;
+    
+}
+#field{
+    padding: 13px 12px;    
+    width: 100%;
+    font-size: 27px;
+
+}
+button{
+    background-color: rgb(134, 134, 228);
+    color: white;
+    border: none;
+    
+    font-size: 18px;
+    border-radius: 2px;
+}
+#content{
+    font-size: 30px;
+}
+t{
+    color: green;
+}

@@ -26,7 +26,7 @@ io.on("connection",(socket)=>{
         console.log('pra', toReceiver);
             if(user[username]){
                 console.log(`user name exist ${user[username]} --${user[toReceiver]}`);
-                io.to(user[username]).to(user[toReceiver]).emit("message",field);
+                io.to(user[username]).to(user[toReceiver]).emit("message",username,field);
             }else{
                 console.log(`There was some problem finding the username ${user[toReceiver]} ${user[username]} ${username} ${field}`);
             }
