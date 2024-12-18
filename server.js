@@ -22,14 +22,16 @@ io.on("connection",(socket)=>{
 
     })
 
-    socket.on("message",(username)=>{
+    socket.on("sender",(toReceiver,username,field)=>{
             if(user[username]){
-                console.log(`user name exist ${user[username]}`);
+                console.log(`user name exist ${user[username]} --${field}`);
+                io.to(user[username]).to(user[toReceiver]).emit("message",field);
             }else{
-                console.log(`There was some problem finding the username ${user[username]}`);
+                console.log(`There was some problem finding the username ${user[username]} ${username}`);
             }
     })
 
+    
 
 });
 
