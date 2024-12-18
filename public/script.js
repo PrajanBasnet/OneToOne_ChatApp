@@ -26,6 +26,6 @@ socket.on("message", (message) => {
     const newContent = document.createTextNode(`${message}`);
     newLi.innerHTML = `${message}`;
     content.appendChild(newLi);
-    content.innerHTML = message;
+    // content.innerHTML = message;
 
 })
